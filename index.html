@@ -1,31 +1,31 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Tathagat - Weather App</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-  <link rel = "icon" type = "image/x-icon" href = "favicon.ico">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 
 <body>
-  <div class = "container">
-    <h1> Tathagat Weathers </h1>
-    <p class = topText> Know Your Weather, Instantly.</p>
-    <div class = "searchBox">
-      <input type = "text" id = "cityInput" placeHolder = "Enter a City Name">
-      <button id = "searchBtn">Get Weather</button>
+
+  <div class="container">
+    <h1 class="title">Tathagat Weather</h1>
+    <p class="subtitle">Know your weather instantly.</p>
+
+    <div class="searchBox">
+      <input type="text" id="cityInput" placeholder="Search city...">
+      <button id="searchBtn">Search</button>
     </div>
-    <div class = "weatherDisplay" id = "weatherDisplay">
-      <p class = "weatherDisplayText">Enter a City to See the Weather!</p>
+
+    <div class="weatherDisplay" id="weatherDisplay">
+      <p class="weatherDisplayText">Enter a city to see the weather.</p>
     </div>
-    <p class = "errorText" id = "errorId"></p>
-      
-    
+
+    <p id="errorId" class="errorText"></p>
   </div>
+
   <script src="script.js"></script>
-
 </body>
-
 </html>
