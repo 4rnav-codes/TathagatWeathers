@@ -3,16 +3,17 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>Tathagat - Weather App</title>
+  <title>Tathagat - Ultra Weather</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 
 <body>
 
+  <canvas id="bgParticles"></canvas>
+
   <div class="container">
-    <h1 class="title">Tathagat Weather</h1>
-    <p class="subtitle">Know your weather instantly.</p>
+    <h1 class="title">Tathagat Live Weather</h1>
+    <p class="subtitle">Ultra smooth. Ultra reactive. Ultra cool.</p>
 
     <div class="searchBox">
       <input type="text" id="cityInput" placeholder="Search city...">
@@ -20,12 +21,14 @@
     </div>
 
     <div class="weatherDisplay" id="weatherDisplay">
-      <p class="weatherDisplayText">Enter a city to see the weather.</p>
+      <p class="weatherDisplayText fade">Enter a city to see the weather.</p>
     </div>
 
     <p id="errorId" class="errorText"></p>
   </div>
 
   <script src="script.js"></script>
+  <script src="particles.js"></script>
+
 </body>
 </html>
