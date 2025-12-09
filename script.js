@@ -60,8 +60,8 @@ function displayWeather(data){
   weatherDisplay.innerHTML = `
   <h2>${name}, ${country}</h2>
   <img src = "https://openweathermap.org/img/wn/${iconCode}@2x.png" alt = "${description}">
-  <p class = "temperature">${Math.round(temperature)}°F</p>
-  <p> Feels Like: ${Math.round(feelsLike)}°F</p>
+  <p class = "temperature">${Math.round(temperature)}°C</p>
+  <p> Feels Like: ${Math.round(feelsLike)}°C</p>
   <p> Condition: ${description.charAt(0).toUpperCase() + description.slice(1)}</p>
   <p> Humidity: ${humidity}%</p>
   <p> Wind Speed: ${windSpeed}m/s</p>
