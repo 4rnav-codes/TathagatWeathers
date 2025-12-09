@@ -20,7 +20,7 @@ async function fetchWeatherData(city) {
   weatherDisplay.innerHTML = "";
   errorText.textContent = "";
   weatherDisplay.classList.remove("error");
-  const url = `${BASE_URL}?q=${city}&appid=${API_KEY}&units=imperial`;
+  const url = `${BASE_URL}?q=${city}&appid=${API_KEY}&units=metric`;
 
   try {
     const response = await fetch(url); // MAKING THE API REQUEST
