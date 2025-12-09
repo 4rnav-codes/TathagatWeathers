@@ -1,34 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Tathagat - Ultra Weather</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
-  <canvas id="bgParticles"></canvas>
-
   <div class="container">
-    <h1 class="title">Tathagat Live Weather</h1>
-    <p class="subtitle">Ultra smooth. Ultra reactive. Ultra cool.</p>
+    <h1>Weather App</h1>
 
-    <div class="searchBox">
-      <input type="text" id="cityInput" placeholder="Search city...">
+    <div class="input-box">
+      <input type="text" id="cityInput" placeholder="Enter city name">
       <button id="searchBtn">Search</button>
     </div>
 
-    <div class="weatherDisplay" id="weatherDisplay">
-      <p class="weatherDisplayText fade">Enter a city to see the weather.</p>
-    </div>
+    <p id="errorId" class="error-text"></p>
 
-    <p id="errorId" class="errorText"></p>
+    <div id="weatherDisplay" class="weather-box"></div>
   </div>
 
   <script src="script.js"></script>
-  <script src="particles.js"></script>
-
 </body>
 </html>
